@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Display all lists
 class ListsController < ApplicationController
   before_action :set_list, only: %i[show create]
 
@@ -5,8 +8,7 @@ class ListsController < ApplicationController
     @lists = List.all
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @list = List.new
